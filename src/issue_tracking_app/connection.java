@@ -4,8 +4,8 @@ public class connection {
 
 	
 	String url="jdbc:mysql://localhost:3306/issue_tracking_app";
-	String username= "root";
-	String password="lonis2511";
+	String username= "root"; //// set your mySQl server credentials(username,password)
+	String password="******";//////////////////////
 	
 	
 	public String getUrl() {
