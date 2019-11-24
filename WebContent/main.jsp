@@ -197,7 +197,7 @@ response.sendRedirect("index.jsp");
 			
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn= DriverManager.getConnection(c.getUrl(),c.getUsername(),c.getPassword());
-			String sql="select * from issues";
+			String sql="SELECT * FROM issues order by editDate desc";
 			Statement st =conn.createStatement();
 			ResultSet rs= st.executeQuery (sql);
 			
